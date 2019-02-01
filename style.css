@@ -1,0 +1,39 @@
+body{
+    background-image: url(https://cf.ltkcdn.net/web-design/images/orig/204538-2261x1326-HTML.jpg);
+}
+.label{
+    color: white;
+}
+.container{
+    margin-top: 120px;
+}
+.btn-primary{
+    margin-left: 443px;
+    margin-top: 36px;
+}
+.btn-warning{
+    margin-top: 39px;
+    margin-left: 23px;
+    height: 37px;
+    width: 61px;
+}
+@media only screen  and (max-width: 400px){
+    .b1{
+        display: flex;
+        justify-content: center;
+        margin-top: -14px;
+
+    }
+    .btn-primary{
+        margin-left: -3px;
+        margin-top: 36px;
+        margin-bottom: -3px;
+
+      
+    }
+    .btn-warning{
+      
+        margin-left: 23px;
+     
+    }
+    }

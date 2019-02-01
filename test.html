@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" >
+    <form action="#" onsubmit="return validation()">
+    <h1 class="text-success text-center">Formulaire d'inscription</h1>
+    <div class="col-lg-8 m-auto d-block">
+       <div class="from-group"> 
+         <label class="label">username:</label>
+         <input type="text" name="username" placeholder="entrez vous username" class="form-control" id="user">
+         <span id="username" class="text-danger font-weight-bold"></span>
+
+       </div>
+
+  </div>
+
+    
+      <div class="col-lg-8 m-auto d-block">
+         <div class="from-group"> 
+           <label class="label">name:</label>
+           <input type="text" name="username" placeholder="entrez vous name"   class="form-control" id="name">
+           <span id="nom" class="text-danger font-weight-bold"></span>
+
+  
+         </div>
+  
+    </div>
+    <div class="col-lg-8 m-auto d-block">
+           <div class="from-group"> 
+             <label class="label">adress:</label>
+             <input type="text" name="username" placeholder="entrez vous adress" class="form-control" id="adress">
+             <span id="adr" class="text-danger font-weight-bold"></span>
+
+    
+           </div>
+    
+      </div>
+      <div class="col-lg-8 m-auto d-block">
+             <div class="from-group"> 
+               <label class="label">email-adress</label>
+               <input type="email" name="emailaddress" class="form-control" type="email-" placeholder="entrez vous email-adress" id="email"s>
+               <!-- <input class="form-control" type="email-" placeholder="entrez vous email-adress" id="email"> -->
+               <span id="em" class="text-danger font-weight-bold"></span>
+
+             </div>
+      
+        </div>
+        <div class="col-lg-8 m-auto d-block">
+               <div class="from-group"> 
+                 <label class="label">password</label>
+                 <input type="password" name="pwd" class="form-control" placeholder="entrez vous password" id="pass" minlength="3" maxlength="8">
+                 <!-- <input class="form-control" type="password" placeholder="entrez vous password" id="pass"> -->
+                 <span id="password" class="text-danger font-weight-bold"></span>
+
+        
+               </div>
+        
+          </div>
+          <div class="b1">
+          <button type="submit" class="btn btn-primary" onclick="validation()">send</button>
+          <button type="button" class="btn btn-warning" onclick="this.form.reset()">rest</button>
+
+        </div>
+          
+        </form>     
+</div>
+
+   
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+<script>
+
+
+
+  function validation(){
+    var user=document.getElementById('user').value;
+    var name=document.getElementById('name').value;
+    var adress=document.getElementById('adress').value;
+    var email=document.getElementById('email').value;
+    var pass=document.getElementById('pass').value;
+
+
+    if(user==""){
+      document.getElementById('username').innerHTML="stp entrez votre nom";
+      return false;
+    }
+    else if(user!=""){
+      document.getElementById('username').innerHTML="";
+ 
+    }
+
+    if(name==""){
+      document.getElementById('nom').innerHTML="stp entrez votre nom";
+      return false;
+    }
+    else if(name!=""){
+      document.getElementById('nom').innerHTML="";
+    
+  
+    }
+
+
+    if(adress==""){
+      document.getElementById('adr').innerHTML="stp entrez votre nom";
+      return false;
+    }
+    else if(adress!=""){
+      document.getElementById('adr').innerHTML="";
+     
+
+    }
+
+
+    if(email==""){
+      document.getElementById('em').innerHTML="stp entrez votre nom";
+      return false;
+    }
+    else if(email!=""){
+      document.getElementById('em').innerHTML="";
+ 
+    }
+
+
+    if(pass==""){
+      document.getElementById('password').innerHTML="stp entrez votre nom";
+      return false;
+    }
+    else if(pass!=""){
+      document.getElementById('password').innerHTML="";
+    
+
+    }
+
+  }
+
+</script>
+</body>
+</html>
